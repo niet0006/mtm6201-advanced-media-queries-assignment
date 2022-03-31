@@ -150,7 +150,26 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-nav a,
+nav{
+  background-color: #646464;
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul li{
+  text-align: center;
+  padding: 0.3em;
+
+}
+
+.sm{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  
+}
+
 nav a:link,
 nav a:visited {
   display: block;
@@ -158,7 +177,7 @@ nav a:visited {
   text-decoration: none;
   background-color: #E0FF8D;
   color: #222;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 nav a:hover,
@@ -166,3 +185,84 @@ nav a:focus {
   background-color: #968DFF;
   color: white;
 }
+
+
+
+@media screen and (min-width:43.75em) {
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+
+ul li:nth-child(1){
+   flex-basis:50%;
+}
+
+ul li:nth-child(2){
+  flex-basis:50%;
+}
+
+ul li:nth-child(3){
+  flex-basis:50%;
+}
+ul li:nth-child(4){
+  flex-basis:50%;
+}
+
+.sm{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 0.8em;
+}
+  
+}
+
+
+@media screen and (min-width:62.5em){
+
+  ul{
+    justify-content: space-between;
+  }
+
+  ul li:nth-child(1){
+    flex-basis:15%;
+ }
+ 
+ ul li:nth-child(2){
+   flex-basis:15%;
+ }
+ 
+ ul li:nth-child(3){
+   flex-basis:15%;
+ }
+ ul li:nth-child(4){
+   flex-basis:15%;
+ }
+
+ .sm{
+   flex-wrap: wrap;
+  
+  width: 16%;
+  gap: 10px;
+  margin-left: 83%;
+
+ }
+ 
+ .sm a:nth-child(1){
+   order: 3;
+ }
+
+ .sm a:nth-child(2){
+  order: 4;
+}
+.sm a:nth-child(3){
+  order: 1;
+}
+.sm a:nth-child(4){
+  order: 2;
+}
+}
+
