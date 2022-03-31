@@ -151,7 +151,6 @@ body {
 }
 
 nav{
-  background-color: #646464;
   width: 90%;
   margin: 0 auto;
 }
@@ -266,3 +265,39 @@ ul li:nth-child(4){
 }
 }
 
+@media (prefers-color-scheme: light) {
+ body{
+  background-color: #dee78c;
+ }
+
+  nav {
+      background-color: #dee78c;
+  }
+
+  nav a:link,
+  nav a:visited{
+    background-color: #8d89c2;
+    color: white;
+  }
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color: #646565;
+   }
+  
+    nav {
+        background-color: #646565;
+    }
+  
+    nav a:link,
+    nav a:visited{
+      background-color: #dee78c;
+      color:#646565; }
+
+    .im{
+      color: #222;
+
+    }
+}
